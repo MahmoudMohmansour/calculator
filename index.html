@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+<meta charset="utf-8">
+<title> Calculator </title>
+<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="headername">
+        <h1> calculator JavaScript</h1>
+    </div>
+<form name="form1">
+    <table class="calculator" >
+        <tr>
+            <td colspan="3"> <input class="display-box" type="text" id="calc" name="answer" disabled /> </td>
+            <td> <input type="button" value="C" onclick="form1.answer.value = ' ' " id="btn" /> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="1" onclick="form1.answer.value += '1' "/> </td>
+            <td> <input type="button" value="2" onclick="form1.answer.value += '2' " /> </td>
+            <td> <input type="button" value="3" onclick="form1.answer.value += '3' " /> </td>
+            <td> <input type="button" value="/" onclick="form1.answer.value += '/' "/> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="4" onclick="form1.answer.value += '4' " /> </td>
+            <td> <input type="button" value="5" onclick="form1.answer.value += '5' " /> </td>
+            <td> <input type="button" value="6" onclick="form1.answer.value += '6' "/> </td>
+            <td> <input type="button" value="-" onclick="form1.answer.value += '-' " /> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="7" onclick="form1.answer.value += '7' " /> </td>
+            <td> <input type="button" value="8" onclick="form1.answer.value += '8' " /> </td>
+            <td> <input type="button" value="9" onclick="form1.answer.value += '9' " /> </td>
+            <td> <input type="button" value="+" onclick="form1.answer.value += '+' " /> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="."onclick="form1.answer.value += '.' " /> </td>
+            <td> <input type="button" value="0" onclick="form1.answer.value += '0' " /> </td>
+            <td  class="equal"> <input type="button" value="=" onclick="form1.answer.value = eval(form1.answer.value) " /> </td>
+            <td> <input type="button" value="*" onclick="form1.answer.value += '*' " /> </td>
+        </tr>
+    </table>
+
+
+</form>
+</body>
+
+</html>
